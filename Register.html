@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 flex items-center justify-center min-h-screen p-4">
+    <section class="w-full max-w-[500px] bg-white rounded-3xl p-6 sm:p-8 flex flex-col items-center">   
+        <img src="img/register1.png" class="bg-gray-200 w-16 m-auto border-gray-400 rounded-2xl">
+        <h2 class="font-extrabold text-3xl text-center pt-3">Create Account</h2>
+        <p class="text-center text-gray-600 font-medium pt-2">Join us today!It only takes a minute</p>
+
+        <div class=" w-full flex flex-col sm:flex-row gap-4 pt-9">
+            <div class="w-full flex flex-col items-start space-y-2">
+                <label class="text-sm font-bold text-gray-800">Full Name</label>
+                <input type="text" placeholder="Chii" class="w-full min-[w-52] h-11 border border-gray-400 rounded-xl px-4 py-2 text-sm bg-gray-100">
+            </div>
+            <div class="w-full flex flex-col items-start space-y-2">
+                <label class="text-sm font-bold text-gray-800">Email Address</label>
+                <input type="email" placeholder="name@company.com" class="w-full min-[w-52] h-11 border border-gray-400 rounded-xl px-4 py-2 text-sm bg-gray-100">
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col items-start space-y-2"> 
+            <label  class="text-sm font-bold text-gray-800">Password</label>
+            <input type="password" placeholder="........" class="w-full h-10 border border-gray-400 rounded-xl  px-4 py-2 text-2xl bg-gray-100 font-bold pb-5">
+        </div>
+
+        <div class="w-full flex flex-col items-start space-y-2 pt-3"> 
+            <label  class="text-sm font-bold text-gray-800">Confirm Password</label>
+            <input type="password" placeholder="........" class="w-full h-10 border border-gray-400 rounded-xl  px-4 py-2 text-2xl bg-gray-100 font-bold pb-5">
+        </div>
+
+        <div class="w-full min-[w-430px]:flex items-start space-x-2 pt-3 pb-3">
+            <input type="checkbox">
+            <label class="text-gray-600">I agree to the <a class="text-blue-500 font-bold underline">Terms of Service</a> and <a class="text-blue-500 font-bold underline">Privacy Policy</a></label>
+        </div>
+        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 text-center rounded-2xl transition-colors mt-2">Create My Account >></button>
+        <p class="text-gray-500 text-xs sm:text-sm mt-6 text-center">Already have an account? <a class="text-blue-500 font-bold underline">Sign in here</a></p> 
+    </section>  
+</body>
+</html>
