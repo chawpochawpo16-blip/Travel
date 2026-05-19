@@ -6,22 +6,28 @@
     <title>Travel Landing</title>
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header class="mx-auto px-6 flex justify-between items-center">
-  <img src="img/Logo.png">
-<nav class="relative hidden md:flex items-center py-3 space-x-9  text-base font-medium text-blue-950"> 
-  <a class="relative z-10 hover:text-pink-400 transition cursor-pointer">Destinations</a> 
-  <a class="relative z-10 hover:text-pink-400 transition cursor-pointer">Hotels</a> 
-  <a class="relative z-10 hover:text-pink-400 transition cursor-pointer">Flights</a> 
-  <a class="relative z-10 hover:text-pink-400 transition cursor-pointer">Bookings</a> 
-  <a class="relative z-10 hover:text-pink-400 transition cursor-pointer">Login</a> 
-  <a class="relative z-10 border border-gray-300 rounded-md px-5 py-2 hover:bg-gray-50 transition cursor-pointer">Sign up</a> 
-  <select class="relative z-10 flex items-center outline-none bg-transparent"> 
-    <option>EN</option> 
-  </select> 
-  <img src="img/Decore.png" alt="" class="absolute top-0 right-0 z-0 w-[600px] pointer-events-none"> 
-</nav>
-  
+<body class="relative overflow-x-hidden"> 
+  <img src="img/Decore.png" class="absolute top-0 right-0 -z-10 w-[320px] sm:w-[450px] md:w-[600px] lg:w-[650px]">
+  <header class="max-w-7xl mx-auto px-6 flex justify-between items-center py-6 relative z-50"> 
+  <h2 class="text-5xl font-extrabold text-blue-950 flex items-center"> 
+    <span>Jad</span> 
+    <span class="w-5 h-5 rounded-full bg-orange-400 outline outline-blue-950 mx-1 mt-3"></span> 
+    <span class="w-5 h-5 rounded-full bg-orange-400 outline outline-blue-950 mx-1 mt-3"></span> 
+  </h2> 
+  <button id="menu-btn" class="md:hidden block text-3xl font-bold text-gray-700 z-50">
+    ☰
+  </button>
+  <nav id="menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent p-6 md:p-0 items-center space-y-4 md:space-y-0 space-x-0 md:space-x-9 text-base font-medium text-gray-700 transition-all"> 
+    <a class="hover:text-pink-400 transition w-full text-center md:w-auto">Destinations</a> 
+    <a class="hover:text-pink-400 transition w-full text-center md:w-auto">Hotels</a> 
+    <a class="hover:text-pink-400 transition w-full text-center md:w-auto">Flights</a> 
+    <a class="hover:text-pink-400 transition w-full text-center md:w-auto">Bookings</a> 
+    <a class="hover:text-pink-400 transition w-full text-center md:w-auto text-blue-600 font-semibold md:font-medium md:text-gray-700">Login</a> 
+    <a class="border border-gray-300 rounded-md px-5 py-2 hover:bg-gray-50 transition w-full text-center md:w-auto">Sign up</a> 
+    <select class="outline-none bg-transparent pt-2 md:pt-0"> 
+      <option>EN</option> 
+    </select> 
+  </nav> 
 </header>
 
 <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center  pb-24 ">
@@ -29,10 +35,11 @@
     <h3 class="sm:text-sm font-bold text-red-400">
       BEST DESTINATIONS AROUND THE WORLD
     </h3>
-    <h1 class="text-6xl font-bold text-blue-950">
-      Travel,enjoy <br>and live a new <br>and full life
-    </h1>
-    
+      <h1 class="text-4xl sm:text-6xl font-bold text-blue-950 flex flex-col"> 
+      <span>Travel, enjoy</span> 
+      <span>and live a new</span> 
+      <span>and full life</span> 
+      </h1>
     <p class="text-gray-500 text-sm">
       Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
     </p>
@@ -160,7 +167,7 @@
 </section>
 
 <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12  items-center">
-  <div class="space-y-8 w-auto">
+  <div class="space-y-8 max-w-xl mx-auto text-center lg:text-left">
       <span class="font-semibold">Easy and Fast</span>
       <h2 class="text-5xl font-bold text-blue-950 mt-2">Book Your Next Trip In 3 Easy Steps</h2>
       <div class="space-y-9">
@@ -193,7 +200,6 @@
           <p class="text-gray-500 text-sm mt-1 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
         </div>
       </div>
-
     </div>
   </div>
   <div class="relative flex justify-center items-center pt-10 ">
@@ -245,16 +251,15 @@
 </section>
 
 <section class="max-w-7xl mx-auto px-6 py-20 bg-white relative">
-  
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
     <div class="col-span-5 space-y-20">
-      <div>
+      <div class="space-y-8 max-w-xl mx-auto text-center lg:text-left">
         <span class="text-sm font-bold text-gray-500">TESTIMONIALS</span>
-        <h2 class="text-6xl font-bold text-blue-950 mt-2">What People Say<br>About Us.
-        </h2>
+         <h2 class="text-5xl lg:text-6xl font-bold text-blue-950 mt-2">
+        What People Say <span class="block lg:inline">About Us.</span>
+        </h2> 
       </div>
-
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center justify-center space-x-5">
         <span class="w-3 h-3 rounded-full bg-blue-950"></span>
         <span class="w-3 h-3 rounded-full bg-gray-200 hover:bg-gray-400"></span>
         <span class="w-3 h-3 rounded-full bg-gray-200 hover:bg-gray-400"></span>
@@ -279,7 +284,7 @@
               src="img/greegirl.jpg"class="w-full h-full"/>
           </div>
 
-          <p class="text-gray-600 text-sm leading-relaxed font-medium pt-2">
+          <p class="text-gray-600 text-base leading-relaxed font-medium pt-2">
             “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
           </p>
           <div class="mt-4">
@@ -334,13 +339,12 @@
 
 <footer class="max-w-7xl mx-auto px-6 pt-20 pb-10 bg-white text-gray-500">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6 mb-16">
-    
-    <div class="space-y-5">
+    <div class=" flex flex-col items-center space-y-5">
       <h2 class="text-5xl font-bold text-blue-950">Jadoo.</h2>
       <p class="font-semibold">Book your trip in a minute,get full<br>control for much longer.</p>
     </div>
 
-    <div class="space-y-4">
+    <div class="flex flex-col items-center space-y-4">
       <h4 class="text-black font-bold text-2xl">Company</h4>
       <ul class="space-y-3 text-sm font-medium">
         <li><a href="#" class="text-gray-400 text-xl">About</a></li>
@@ -349,7 +353,7 @@
       </ul>
     </div>
 
-    <div class="space-y-4">
+    <div class="flex flex-col items-center space-y-4">
       <h4 class="text-black font-bold text-2xl">Contact</h4>
       <ul class="space-y-3 text-sm font-medium">
         <li><a href="#" class="text-gray-400 text-xl">Help/FAQ</a></li>
@@ -358,8 +362,8 @@
       </ul>
     </div>
 
-    <div class="space-y-4">
-      <h4 class="text-black font-bold text-lg">More</h4>
+    <div class="flex flex-col items-center space-y-4">
+      <h4 class="text-black font-bold text-2xl">More</h4>
       <ul class="space-y-3 text-sm font-medium">
         <li><a href="#" class="text-gray-400 hover:text-black transition text-xl">Airlinefees</a></li>
         <li><a href="#" class="text-gray-400 hover:text-black transition text-xl">Airline</a></li>
@@ -367,19 +371,19 @@
       </ul>
     </div>
 
-    <div class="space-y-5">
+    <div class="flex flex-col items-center space-y-5">
       <div class="flex items-center space-x-4">
         <a href="#" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-black font-bold text-2xl">f</a>
         <a href="#" class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 text-white shadow-md flex items-center justify-center text-2xl">📸</a>
         <img src="img/twi.png" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-black">
       </div>
       
-      <div class="space-y-3">
+      <div class=" flex flex-col items-center space-y-3">
         <span class="text-2xl font-semibold text-gray-500">Discover our app</span>
         
         <div class="flex items-center space-x-2 rounded-l-3xl">
           <a href="#" class="bg-black text-white p-1 rounded-3xl flex items-center space-x-2">
-            <img src="img/google-play 1.png" class="w-8">
+            <img src="img/google-play 1.png" class="w-5">
             <div class="text-left leading-none">
               <span class="text-sm  font-semibold">GET IT ON</span>
               <span class="text-xs">GOOGLE PLAY</span>
@@ -387,7 +391,7 @@
           </a>
           <div class="flex items-center space-x-2 rounded-l-3xl">
           <a href="#" class="bg-black text-white p-1 rounded-3xl flex items-center space-x-2">
-            <img src="img/apple.png" class="w-8">
+            <img src="img/apple.png" class="w-5">
             <div class="text-left leading-none">
               <span class="text-sm  font-semibold">Avaliable on the</span>
               <span class="text-xs">Apple Store</span>
@@ -396,12 +400,26 @@
         </div>
       </div>
     </div>
-
   </div>
-
   <div class="text-center text-xs font-medium pt-3 border-gray-100 ">
     All rights reserved@jadoo.com
   </div>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+    
+    if (menu.classList.contains('hidden')) {
+      menuBtn.innerHTML = '☰';
+    } else {
+      menuBtn.innerHTML = '✕';
+    }
+  });
+</script>
 </body>
 </html>
